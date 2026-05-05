@@ -74,7 +74,7 @@ Replace `YOUR_USERNAME` with your GitHub username.
 3. Select branch: **main**, folder: **/ (root)**.
 4. Click **Save**.
 
-Your site will be live at: `https://YOUR_USERNAME.github.io/portfolio/`
+Your site will be live at: `https://mariojnesta.github.io/portfolio_marioj/`
 
 It may take 1–2 minutes to build the first time.
 
