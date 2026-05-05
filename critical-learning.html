@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Critical Learning Elements — Mario Jinesta | GEOG 499</title>
+  <meta name="description" content="Critical Learning Elements: Kenya atlas essay (GEOG 421), CMIP6 climate analysis (GEOG 434), and GIS cartographic work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ NAVIGATION ═══ -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      Mario Jinesta
+      <span>GEOG 499 Portfolio · UTK</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Introduction</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="critical-learning.html" class="active">Critical Learning</a></li>
+      <li><a href="additional.html">Additional</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════ PAGE HEADER ═══ -->
+<header class="page-header" aria-label="Page header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">Critical Learning Elements</span>
+    </nav>
+    <div class="category-badge">III · Critical Learning Elements</div>
+    <h1>Critical Learning Elements</h1>
+    <p class="page-desc">
+      Three categories of work that show how I think across geography, climate science, and spatial analysis —
+      a critical cartography essay, a climate modeling research project, and a GIS map gallery.
+    </p>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════ MAIN CONTENT ═══ -->
+<main>
+
+  <!-- ══════════════════════════════════════════════════════
+       SECTION A: KENYA ATLAS ESSAY (GEOG 421)
+  ══════════════════════════════════════════════════════ -->
+  <section id="kenya-essay" class="section" aria-labelledby="kenya-heading">
+    <div class="container">
+      <span class="section-label">Critical Analysis · GEOG 421 — Maps, Society &amp; Power</span>
+      <h2 id="kenya-heading">"Mapping Kenya for Western Eyes" — Critical Essay</h2>
+      <p class="page-meta">Spring 2026 &mdash; Midterm Take-Home Essay</p>
+
+      <p>
+        For this essay, I analyzed a collection of five Cold War-era maps of Kenya — a large physical
+        reference map and four thematic maps covering ethnic groups, population density, agricultural
+        production, and mining operations. Based on internal evidence (Germany appears divided on an
+        inset world map), I dated the collection to somewhere between 1949 and 1989, almost certainly
+        produced by an American or British publisher for a Western readership. My argument is that this
+        atlas functions as a Cold War economic primer: it uses the language of cartographic objectivity
+        to reduce Kenya's complex social, ethnic, and economic geography into categories that serve
+        Western strategic interests far more than they represent Kenya on its own terms.
+      </p>
+      <p>
+        I applied frameworks from Harley (1989), Lee (2010), MacArthur (2016), Monmonier (1991), and
+        Nagaraj and Stern (2020) to read the maps against the grain. Harley's concept of cartographic
+        silence was central — the atlas has no political map, no representation of colonial governance
+        structures, and no acknowledgment of the White Highlands, the fertile areas Britain reserved for
+        European settlers by displacing Kikuyu and other Bantu communities. These omissions aren't
+        accidents; they erase the politics of Kenya's landscape and present it as a neutral space of
+        resources and populations. The ethnic map uses colonial-era categories like "Nilo-Hamitic" that
+        modern scholarship has largely abandoned, reproducing exactly the kind of administrative taxonomy
+        MacArthur documents British colonizers using to manage and divide Kenyan populations. The mining
+        map labels resources with chemical symbols but shows no ownership, no extraction terms, no
+        indication of where profits flow — which, following Lee's political economy framework, transforms
+        geographic information into market intelligence for Western industrial and military planners. Even
+        an apparently neutral gesture, like labeling one area "extremely complex tribal and ethnic
+        mixture" rather than actually representing that complexity, is a design choice that keeps the map
+        clean and legible for its intended audience while erasing dozens of distinct communities.
+      </p>
+      <p>
+        What the exercise showed me is how authoritative-looking documents can embed deeply political
+        choices through what they include, what they exclude, and how they categorize. The maps look
+        objective because they use clean lines, standard symbols, and scientific-style labeling — but
+        that apparent neutrality is itself a rhetorical move. Monmonier calls this the "strategic
+        reduction of complexity," and Nagaraj and Stern show that the same underlying data, presented
+        through different design choices, produces different maps with different real-world consequences.
+        A Cold War-era mining map of Kenya with no social context isn't a neutral document; it's an
+        invitation to extraction. Working through this analysis changed how I read all geographic
+        representation — including the maps I make myself. Every cartographic choice has stakes, and
+        pretending otherwise is itself a political position.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       SECTION B: CMIP6 CLIMATE ANALYSIS (GEOG 434)
+  ══════════════════════════════════════════════════════ -->
+  <section id="cmip6" class="section" aria-labelledby="cmip6-heading">
+    <div class="container">
+      <span class="section-label">Core Research · GEOG 434 — Climate Science</span>
+      <h2 id="cmip6-heading">CMIP6 Climate Model Ensemble Analysis</h2>
+      <p class="page-meta">Spring 2025 &mdash; Python · xarray · NetCDF · CMIP6 / ESGF</p>
+
+      <!-- Download bar -->
+      <div class="info-box" style="margin:1.25rem 0;">
+        <p>
+          Full paper available as PDF. &nbsp;
+          <a href="assets/docs/CMIP6_Analysis_FAST.pdf" target="_blank" class="btn btn-accent" style="font-size:.8rem;">View Full Paper (PDF)</a>
+        </p>
+      </div>
+
+      <!-- 1. Research Question -->
+      <div class="content-section">
+        <span class="section-label">1. Research Question</span>
+        <h3>What I was trying to find out</h3>
+        <p>
+          The central question for this project was how projected changes in surface temperature,
+          precipitation, and soil moisture diverge between SSP1-2.6 and SSP3-7.0 across the 21st
+          century — and what those diverging trajectories imply for long-term climate impacts. My
+          hypothesis going in was that SSP3-7.0 would show substantially larger changes across all
+          three variables, but I was curious whether the divergence would be gradual or whether there
+          was a clearer separation opening up in the second half of the century as cumulative emissions
+          compound.
+        </p>
+      </div>
+
+      <!-- 2. Background -->
+      <div class="content-section">
+        <span class="section-label">2. Background</span>
+        <h3>CMIP6 and the SSP framework</h3>
+        <p>
+          CMIP6 (Coupled Model Intercomparison Project Phase 6) is the coordinated multi-model
+          framework that underpins the IPCC's Sixth Assessment Report. Each model in the ensemble
+          simulates the climate system independently using different parameterizations, which means
+          running multiple models over the same scenarios lets you characterize both the projected
+          signal and the uncertainty around it — you get an ensemble mean and a spread that tells you
+          how much the models agree.
+        </p>
+        <p>
+          The two scenarios I focused on represent very different futures. SSP1-2.6 assumes aggressive
+          emissions mitigation, with global temperatures stabilizing around 1.5–2°C above pre-industrial
+          levels by 2100. SSP3-7.0 assumes fragmented international cooperation and continued high
+          fossil fuel dependence, with warming reaching roughly 3.5–4°C by century's end. Comparing
+          them directly is a way of quantifying what aggressive mitigation actually buys in terms of
+          avoided change across multiple climate variables — not just temperature, but the cascading
+          effects on precipitation patterns and soil moisture that temperature drives.
+        </p>
+      </div>
+
+      <!-- 3. Data & Methods -->
+      <div class="content-section">
+        <span class="section-label">3. Data &amp; Methods</span>
+        <h3>How I built the analysis</h3>
+        <p>
+          I pulled CMIP6 model output from the Earth System Grid Federation (ESGF) for multiple
+          ensemble members under both SSP scenarios. The three variables I analyzed were
+          <em>tas</em> (near-surface air temperature), <em>pr</em> (precipitation), and soil moisture.
+          All data processing was done in Python — xarray for loading and manipulating the multi-dimensional
+          NetCDF files, NumPy for numerical operations, and Matplotlib for visualization.
+        </p>
+        <p>
+          The workflow: load the raw files and inspect coordinate systems, apply unit conversions
+          (K&rarr;&deg;C for temperature, kg/m²/s&rarr;mm/day for precipitation), compute anomalies
+          relative to the 1850–2015 historical baseline, average across ensemble members to get the
+          ensemble mean, and then compare the two scenarios. I characterized ensemble spread using
+          ±1 standard deviation across members, which gives a sense of how much model disagreement
+          exists around any given projected value.
+        </p>
+      </div>
+
+      <!-- 4. Analysis -->
+      <div class="content-section">
+        <span class="section-label">4. Analysis</span>
+        <h3>What the data showed</h3>
+
+        <h3 style="font-size:.9rem; margin-top:1.25rem;">Temperature</h3>
+        <p>
+          Temperature projections show a clear and widening divergence between scenarios through the
+          21st century. Under SSP1-2.6, the ensemble mean reaches approximately 1.5–2°C above the
+          1850–2015 reference period by 2100 before beginning to stabilize as emissions decline. The
+          individual ensemble members cluster relatively tightly around that mean, reflecting reasonable
+          model agreement on the outcome of the mitigation pathway. Under SSP3-7.0, warming continues
+          accelerating through the century with substantially more spread between ensemble members —
+          uncertainty compounds as the forcing grows stronger and the models' different sensitivities
+          matter more.
+        </p>
+
+        <figure style="margin:1.5rem 0;">
+          <img
+            src="assets/figures/fig7-temp-ssp126.png"
+            alt="Time series of global mean surface air temperature anomaly from 1850 to 2100 under SSP1-2.6, showing four ensemble members and the ensemble mean"
+            data-lightbox="assets/figures/fig7-temp-ssp126.png"
+            data-lb-caption="Figure 7. Global Mean Temperature Time Series — SSP1-2.6. Individual ensemble members (colored lines) and ensemble mean (black). Under SSP1-2.6, warming stabilizes near 1.5–2°C above the 1850–2015 reference by 2100."
+            style="cursor:zoom-in; border:1px solid var(--border);"
+          >
+          <figcaption class="figure-caption">
+            Figure 7. Global Mean Surface Air Temperature Anomaly — SSP1-2.6 (Low Emissions).
+            Reference period: 1850–2015. Colored lines show individual ensemble members; black line
+            shows the ensemble mean. Warming stabilizes near 1.5–2°C above baseline by 2100.
+          </figcaption>
+        </figure>
+
+        <h3 style="font-size:.9rem; margin-top:1.25rem;">Precipitation</h3>
+        <p>
+          Precipitation changes under SSP3-7.0 are more pronounced and more regionally differentiated
+          than under SSP1-2.6. The high-emissions scenario produces a stronger intensification of the
+          hydrological cycle: wetter high latitudes, drier subtropics, sharper contrasts between wet
+          and dry regions. Under SSP1-2.6 these patterns are present but muted — the signal is there
+          but the magnitude is meaningfully smaller. This matters because precipitation changes are
+          harder to adapt to than temperature changes alone; infrastructure and agriculture are
+          calibrated to historical precipitation regimes, and shifting those regimes faster creates
+          more pressure on adaptation systems.
+        </p>
+
+        <figure style="margin:1.5rem 0;">
+          <img
+            src="assets/figures/fig4-precip-ssp370.png"
+            alt="Global map of projected precipitation trends under SSP3-7.0, showing wetting at high latitudes and drying in subtropical regions"
+            data-lightbox="assets/figures/fig4-precip-ssp370.png"
+            data-lb-caption="Figure 4. Precipitation Trends under SSP3-7.0 (High Emissions, 1899–2100). High latitudes get wetter; subtropics get drier. The contrast between wet and dry regions intensifies significantly under the high-emissions pathway."
+            style="cursor:zoom-in; border:1px solid var(--border);"
+          >
+          <figcaption class="figure-caption">
+            Figure 4. Precipitation Trends under SSP3-7.0 — High Emissions (1899–2100).
+            Under the high-emissions scenario, precipitation changes are more pronounced and more spatially
+            differentiated: stronger wetting at high latitudes, more severe drying in the subtropics.
+            Regions already under water stress face significantly increased drought risk.
+          </figcaption>
+        </figure>
+
+        <h3 style="font-size:.9rem; margin-top:1.25rem;">Soil Moisture</h3>
+        <p>
+          Soil moisture integrates both the temperature and precipitation signals. Elevated temperatures
+          increase evapotranspiration, which can drive soil drying even in regions where precipitation
+          doesn't decrease — the warming alone is enough to pull more water out of the soil column.
+          Under SSP3-7.0, large parts of the subtropics and Mediterranean-type climates show substantial
+          soil moisture declines with direct implications for agriculture and drought frequency. Under
+          SSP1-2.6, the soil moisture signal is weaker and the regional patterns are less extreme,
+          which maps onto meaningfully better outcomes for dryland farming systems and natural ecosystems
+          that depend on soil water availability.
+        </p>
+      </div>
+
+      <!-- 5. Conclusions -->
+      <div class="content-section">
+        <span class="section-label">5. Conclusions</span>
+        <h3>What it adds up to</h3>
+        <p>
+          The main takeaway is that the difference between aggressive mitigation and a high-emissions
+          trajectory isn't marginal — it's the difference between a climate that stabilizes within a
+          range existing infrastructure and ecosystems can adapt to and one that continues changing
+          faster than most adaptation mechanisms can track. The ensemble spread under SSP3-7.0 was
+          notably larger than under SSP1-2.6, which makes physical sense but also has a policy
+          implication: the higher-emissions outcome is both more damaging and less predictable. You get
+          worse outcomes and more uncertainty about how bad they'll be.
+        </p>
+        <p>
+          There were real limitations I'd want to address with more time: the number of ensemble
+          members varied by model, the analysis stays at coarse global resolution rather than the
+          bias-corrected regional output you'd need for actual planning, and the soil moisture variable
+          had less consistent coverage across models than temperature or precipitation. But the core
+          signal is robust across those limitations.
+        </p>
+        <div class="highlight-box">
+          <p>
+            This was the most technically demanding thing I'd done in Python up to that point. Working
+            with multi-dimensional NetCDF data, handling coordinate systems, building clean visualizations
+            from raw model output — it pushed me to be a more careful programmer and a more precise
+            analyst. And the stakes made it feel real: these aren't abstract numbers, they're projections
+            that should be informing infrastructure investment and emissions policy right now. That
+            connection between the technical work and the actual decision-making is a big part of why
+            I want to keep doing this kind of analysis.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       SECTION C: GIS & CARTOGRAPHIC WORK
+  ══════════════════════════════════════════════════════ -->
+  <section id="gis" class="section" aria-labelledby="gis-heading">
+    <div class="container">
+      <span class="section-label">GIS &amp; Cartographic Work · QGIS · ArcGIS Pro</span>
+      <h2 id="gis-heading">GIS &amp; Cartographic Work</h2>
+      <p style="margin-bottom:2rem;">
+        Maps I've made in QGIS and ArcGIS Pro across coursework and independent projects. Click any
+        image to enlarge.
+      </p>
+
+      <!-- Featured: Zelda / GSMN map -->
+      <div style="margin-bottom:3rem;">
+        <span class="section-label">Featured Project — QGIS · Independent</span>
+        <h3 style="margin-bottom:1rem;">Great Smoky Mountains National Park / <em>Breath of the Wild</em></h3>
+
+        <div class="gis-hero-card">
+          <img
+            src="assets/images/gsmn-zelda.png"
+            alt="Great Smoky Mountains National Park reimagined as a map styled after The Legend of Zelda: Breath of the Wild, with custom contour lines and a Hyrule-inspired color palette"
+            class="gis-hero-img"
+            loading="lazy"
+            data-lightbox="assets/images/gsmn-zelda.png"
+            data-lb-caption="Great Smoky Mountains National Park / Breath of the Wild — Custom QGIS cartographic project. Contour lines, custom symbology, and a Hyrule-inspired color palette applied to GSMN topographic data from USGS 3DEP."
+          >
+          <div class="gis-hero-caption">
+            <p>
+              I built this map in QGIS to see how far I could push custom cartographic styling —
+              specifically, whether I could make real topographic data feel like it belonged in the
+              visual world of <em>The Legend of Zelda: Breath of the Wild</em>. The source data is
+              USGS 3DEP elevation data for Great Smoky Mountains National Park. I pulled the DEMs,
+              generated custom contour intervals, styled them with a Hyrule-inspired color palette,
+              and added points of interest using custom symbol libraries.
+            </p>
+            <p>
+              What I found interesting about the project is that it's actually a good test of
+              cartographic fundamentals — the BotW aesthetic has really clear rules about line weight,
+              color hierarchy, and label placement, so matching it forced me to be precise about things
+              that are easy to be sloppy about in default QGIS workflows. The map also reflects something
+              I think is true: aesthetic choices in maps are never just decorative. They shape how the
+              reader emotionally engages with the geography, what they notice first, and what they
+              remember. That's as true for this map as it is for a Cold War atlas of Kenya.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tornado Map -->
+      <div style="padding-top:2.5rem; border-top:1px solid var(--border);">
+        <span class="section-label">GEOG 311 · ArcGIS Pro</span>
+        <h3 style="margin-bottom:1rem;">Tornado Intensity vs. Population Density — American Southeast</h3>
+
+        <div class="gis-hero-card">
+          <img
+            src="assets/images/tornado-map.png"
+            alt="Choropleth map of the American Southeast showing tornado intensity versus population density by county, analyzing the relationship between urbanization and tornado activity in Dixie Alley"
+            class="gis-hero-img"
+            loading="lazy"
+            data-lightbox="assets/images/tornado-map.png"
+            data-lb-caption="Tornado Intensity vs. Population Density: Modern Urbanization's Effect on Increasing Tornado Activity in the American Southeast — ArcGIS Pro, GEOG 311."
+          >
+          <div class="gis-hero-caption">
+            <p>
+              I made this map for GEOG 311 to explore the relationship between tornado intensity and
+              population density across the American Southeast. The research question was whether modern
+              urbanization might be driving apparent increases in tornado-related damage in the region —
+              as cities expand into historically rural tornado-prone areas, more storms affect more
+              people and more infrastructure, which shows up in the damage record even without any
+              change in the underlying storm climatology. I mapped tornado intensity data at the county
+              level alongside population density, looking for spatial patterns in the overlap.
+            </p>
+            <p>
+              The Southeast is part of what researchers call "Dixie Alley" — a secondary tornado
+              corridor that gets less attention than the Great Plains but has comparable or higher
+              tornado activity in terms of frequency and fatality rates. Making this map in ArcGIS Pro
+              taught me a lot about classification decisions in choropleth mapping: how you set your
+              breaks, what classification scheme you use (equal interval, natural breaks, quantile),
+              and what color ramp you choose all dramatically change what pattern the viewer reads.
+              It was one of my first substantial GIS deliverables, and it's where I started thinking
+              more carefully about the gap between "I made a map" and "I made a map that accurately
+              communicates what the data shows."
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════════════════════════════════ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <strong>Mario Jinesta</strong> &mdash; Geography &amp; Sustainability, University of Tennessee, Knoxville &mdash; Class of 2027
+    </div>
+    <div class="footer-right">
+      <a href="https://github.com/mariojnesta/portfolio_marioj" target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
