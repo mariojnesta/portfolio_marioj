@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIS Project Gallery — Mario Jinesta | GEOG 499</title>
+  <meta name="description" content="GIS and cartographic work by Mario Jinesta, including the Great Smoky Mountains / Breath of the Wild map and other QGIS and ArcGIS Pro projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ NAVIGATION ═══ -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      Mario Jinesta
+      <span>GEOG 499 Portfolio · UTK</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">Introduction</a></li>
+      <li><a href="../resume.html">Resume</a></li>
+      <li>
+        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+          Critical Learning <span class="nav-arrow">▾</span>
+        </button>
+        <ul class="dropdown-menu" role="list">
+          <li class="dropdown-divider">Critical Analysis</li>
+          <li><a href="cartography.html">Narrative &amp; Critical Cartography</a></li>
+          <li><a href="meteorology.html">Meteorology Applied Skills</a></li>
+          <li><a href="usability.html">Usability Testing Report</a></li>
+          <li class="dropdown-divider">Core Research</li>
+          <li><a href="cmip6.html"><span class="drop-star">★ </span>CMIP6 Climate Analysis</a></li>
+          <li class="dropdown-divider">GIS &amp; Mapping</li>
+          <li><a href="gis.html" class="active">GIS Project Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="../additional.html">Additional</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════ PAGE HEADER ═══ -->
+<header class="page-header" aria-label="Page header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span>Critical Learning Elements</span>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">GIS Project Gallery</span>
+    </nav>
+    <div class="category-badge">III-C · Geospatial / GIS Projects</div>
+    <h1>GIS &amp; Cartographic Work</h1>
+    <p class="page-meta">QGIS · ArcGIS Pro · Custom Cartographic Design</p>
+    <p class="page-desc">
+      A gallery of geospatial projects demonstrating technical GIS skills, spatial analysis,
+      and cartographic design — from custom thematic mapping to data-driven environmental analysis.
+      Click any map to enlarge.
+    </p>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════ MAIN CONTENT ═══ -->
+<main class="section">
+  <div class="container">
+
+    <!-- ── HERO PROJECT: GSMN / Zelda Map ── -->
+    <section aria-labelledby="gsmn-heading">
+      <span class="section-label">Featured Project</span>
+      <h2 id="gsmn-heading" style="margin-bottom:1.5rem;">Great Smoky Mountains / <em>Breath of the Wild</em> Map</h2>
+
+      <div class="gis-hero-card">
+        <!-- The actual Zelda/Smokies map image -->
+        <img
+          src="../assets/images/gsmn-zelda.png"
+          alt="Great Smoky Mountains National Park reimagined as a map styled after The Legend of Zelda: Breath of the Wild, showing custom contour lines, topography, and points of interest"
+          class="gis-hero-img"
+          loading="lazy"
+          data-lightbox="../assets/images/gsmn-zelda.png"
+          data-lb-caption="Great Smoky Mountains / Breath of the Wild — Custom QGIS cartographic project. Contour lines, custom symbology, and a Hyrule-inspired color palette applied to GSMN topographic data."
+        >
+        <div class="gis-hero-caption">
+          <div>
+            <h2 style="margin-bottom:.3rem;">Great Smoky Mountains National Park</h2>
+            <p style="color:var(--col-primary); font-weight:600; font-size:.9rem; margin-bottom:.75rem;">
+              Styled after <em>The Legend of Zelda: Breath of the Wild</em>
+            </p>
+            <p>
+              This QGIS project reimagines the topography of Great Smoky Mountains National Park through the visual language of Nintendo's <em>Breath of the Wild</em> — a game known for its iconic hand-drawn map aesthetic. Custom contour intervals, a Hyrule-inspired color palette, and styled points of interest translate real elevation data into something that feels simultaneously faithful to the landscape and evocative of the game world.
+            </p>
+            <p>
+              The project demonstrates proficiency in custom QGIS symbology, contour styling, layer management, and cartographic design thinking. It also reflects a core conviction: that map aesthetics are never superficial — they shape how readers emotionally and cognitively engage with geographic space.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">QGIS</span>
+              <span class="tech-tag">Custom Symbology</span>
+              <span class="tech-tag">Contour Styling</span>
+              <span class="tech-tag">DEM / Topographic Data</span>
+              <span class="tech-tag">Cartographic Design</span>
+            </div>
+          </div>
+          <div style="flex-shrink:0; display:flex; flex-direction:column; gap:.5rem; min-width:140px; text-align:center;">
+            <span style="font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--col-text-muted);">Tools Used</span>
+            <span class="tag" style="justify-self:center;">QGIS</span>
+            <span style="font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--col-text-muted); margin-top:.5rem;">Data</span>
+            <span style="font-size:.82rem; color:var(--col-text-muted);"><!-- TODO: [MJ] Name your elevation data source, e.g., USGS 3DEP, NPS data, OpenTopoData -->[Elevation Data Source]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Progress / In-progress image if you have one ── -->
+    <!-- Note: progress2_GSMN_Zelda.png has been copied to assets/images/gsmn-zelda.png above.
+         If you have a separate "in-progress" screenshot, add it as a second map card below. -->
+
+    <!-- ── Additional QGIS Projects ── -->
+    <section style="margin-top:3rem;" aria-labelledby="qgis-heading">
+      <span class="section-label">QGIS Projects</span>
+      <h2 id="qgis-heading" style="margin-bottom:1.5rem;">Additional Mapping Work</h2>
+
+      <div class="map-grid">
+
+        <!-- Map Card: Placeholder 1 -->
+        <!-- TODO: [MJ] Replace each map card with an actual project.
+             To add a real image: swap .map-card-ph for <img> with data-lightbox attribute.
+             Example:
+             <img src="../assets/images/my-map.png"
+                  alt="Description"
+                  class="map-card-img"
+                  loading="lazy"
+                  data-lightbox="../assets/images/my-map.png"
+                  data-lb-caption="Caption text"> -->
+        <article class="map-card">
+          <div class="map-card-ph" aria-label="Map placeholder">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            <span>Add map image to<br>assets/images/</span>
+          </div>
+          <div class="map-card-body">
+            <p class="map-card-course">QGIS · [Course]</p>
+            <h3>[Map Title]</h3>
+            <p class="map-card-desc">
+              <!-- TODO: [MJ] Describe what this map shows, the data used, and the analytical or design choices made. -->
+              Brief description of the map: what it shows, why it was made, what spatial analysis or data was involved. Note the projection, data source, and any particular design decisions.
+            </p>
+            <div class="tech-tags" style="margin-top:.75rem;">
+              <span class="tech-tag">QGIS</span>
+              <span class="tech-tag">[Data Source]</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Map Card: Placeholder 2 -->
+        <article class="map-card">
+          <div class="map-card-ph" aria-label="Map placeholder">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            <span>Add map image to<br>assets/images/</span>
+          </div>
+          <div class="map-card-body">
+            <p class="map-card-course">QGIS · [Course]</p>
+            <h3>[Map Title]</h3>
+            <p class="map-card-desc">Brief description of the map and its spatial context.</p>
+            <div class="tech-tags" style="margin-top:.75rem;">
+              <span class="tech-tag">QGIS</span>
+              <span class="tech-tag">[Data Source]</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Map Card: Placeholder 3 -->
+        <article class="map-card">
+          <div class="map-card-ph" aria-label="Map placeholder">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            <span>Add map image to<br>assets/images/</span>
+          </div>
+          <div class="map-card-body">
+            <p class="map-card-course">QGIS · [Course]</p>
+            <h3>[Map Title]</h3>
+            <p class="map-card-desc">Brief description of the map and its spatial context.</p>
+            <div class="tech-tags" style="margin-top:.75rem;">
+              <span class="tech-tag">QGIS</span>
+              <span class="tech-tag">[Data Source]</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── ArcGIS Pro Work ── -->
+    <section style="margin-top:3.5rem; padding-top:3rem; border-top:1px solid var(--col-border);" aria-labelledby="arcgis-heading">
+      <span class="section-label">ArcGIS Pro</span>
+      <h2 id="arcgis-heading" style="margin-bottom:1.5rem;">ArcGIS Pro Projects</h2>
+
+      <div class="map-grid">
+
+        <article class="map-card">
+          <div class="map-card-ph" aria-label="Map placeholder">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            <span>Add map image to<br>assets/images/</span>
+          </div>
+          <div class="map-card-body">
+            <p class="map-card-course">ArcGIS Pro · [Course]</p>
+            <h3>[Map / Analysis Title]</h3>
+            <p class="map-card-desc">
+              <!-- TODO: [MJ] Describe the ArcGIS Pro project: what analysis was performed,
+                   what tools were used (spatial join, buffer, raster analysis, etc.),
+                   and what the deliverable showed. -->
+              Describe the ArcGIS Pro analysis: tools used, data inputs, spatial analysis performed, and what the output demonstrates.
+            </p>
+            <div class="tech-tags" style="margin-top:.75rem;">
+              <span class="tech-tag">ArcGIS Pro</span>
+              <span class="tech-tag">[Analysis Type]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="map-card">
+          <div class="map-card-ph" aria-label="Map placeholder">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            <span>Add map image to<br>assets/images/</span>
+          </div>
+          <div class="map-card-body">
+            <p class="map-card-course">ArcGIS Pro · [Course]</p>
+            <h3>[Map / Analysis Title]</h3>
+            <p class="map-card-desc">Describe the project, tools, and outputs.</p>
+            <div class="tech-tags" style="margin-top:.75rem;">
+              <span class="tech-tag">ArcGIS Pro</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="info-box" style="margin-top:2rem;">
+        <p>
+          <strong>Note:</strong> Additional GIS coursework and lab deliverables are available on request.
+          <!-- TODO: [MJ] Adjust or remove this note as appropriate. -->
+        </p>
+      </div>
+    </section>
+
+  </div><!-- /.container -->
+</main>
+
+<!-- ══════════════════════════════════════════ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <strong>Mario Jinesta</strong> &mdash; Geography &amp; Sustainability, University of Tennessee, Knoxville &mdash; Class of 2027
+    </div>
+    <div class="footer-right">
+      <a href="https://github.com/USERNAME/portfolio" target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

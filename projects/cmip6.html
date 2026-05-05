@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMIP6 Climate Analysis — Mario Jinesta | GEOG 499</title>
+  <meta name="description" content="GEOG 434 core research project: CMIP6 multi-model ensemble analysis comparing SSP1-2.6 and SSP3-7.0 emissions scenarios using Python and xarray.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ NAVIGATION ═══ -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      Mario Jinesta
+      <span>GEOG 499 Portfolio · UTK</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">Introduction</a></li>
+      <li><a href="../resume.html">Resume</a></li>
+      <li>
+        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+          Critical Learning <span class="nav-arrow">▾</span>
+        </button>
+        <ul class="dropdown-menu" role="list">
+          <li class="dropdown-divider">Critical Analysis</li>
+          <li><a href="cartography.html">Narrative &amp; Critical Cartography</a></li>
+          <li><a href="meteorology.html">Meteorology Applied Skills</a></li>
+          <li><a href="usability.html">Usability Testing Report</a></li>
+          <li class="dropdown-divider">Core Research</li>
+          <li><a href="cmip6.html" class="active"><span class="drop-star">★ </span>CMIP6 Climate Analysis</a></li>
+          <li class="dropdown-divider">GIS &amp; Mapping</li>
+          <li><a href="gis.html">GIS Project Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="../additional.html">Additional</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════ PAGE HEADER ═══ -->
+<header class="page-header" aria-label="Page header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span>Critical Learning Elements</span>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">CMIP6 Climate Analysis</span>
+    </nav>
+    <div class="category-badge">III-B · Core Research Project</div>
+    <h1>CMIP6 Climate Model Ensemble Analysis</h1>
+    <p class="page-meta">GEOG 434 &mdash; Climate Science &mdash; Spring 2025</p>
+    <p class="page-desc">
+      A multi-model ensemble analysis comparing projected changes in temperature, precipitation,
+      and soil moisture under low- and high-emissions pathways using Python, xarray, and CMIP6 data.
+    </p>
+  </div>
+</header>
+
+<!-- ════════════════════════════════ QUICK STATS BAR ═══ -->
+<div style="background:var(--col-surface); border-bottom:1px solid var(--col-border);">
+  <div class="container">
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-value">2</span>
+        <span class="stat-label">SSP Scenarios</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">3</span>
+        <span class="stat-label">Climate Variables</span>
+      </div>
+      <div class="stat-item">
+        <!-- TODO: [MJ] Update with actual number of ensemble members -->
+        <span class="stat-value">~N</span>
+        <span class="stat-label">Ensemble Members</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">Python</span>
+        <span class="stat-label">Primary Tool</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">NetCDF</span>
+        <span class="stat-label">Data Format</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════ MAIN CONTENT ═══ -->
+<main>
+
+  <!-- Download bar -->
+  <div style="background:var(--col-accent-lt); border-bottom:1px solid var(--col-border); padding:.85rem 0;">
+    <div class="container" style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap; justify-content:space-between;">
+      <p style="margin:0; font-size:.88rem; color:var(--col-text);">
+        Full research paper available as PDF.
+      </p>
+      <a href="../assets/docs/CMIP6_Analysis_FAST.pdf" target="_blank" class="btn btn-accent">
+        📄 View Full Paper (PDF)
+      </a>
+    </div>
+  </div>
+
+  <!-- Two-column layout: main content + sidebar -->
+  <div class="container" style="padding-top:3rem; padding-bottom:3rem;">
+    <div class="research-layout">
+
+      <!-- ── Main Column ── -->
+      <div>
+
+        <!-- 1. Research Question -->
+        <section class="content-section" aria-labelledby="rq-heading">
+          <span class="section-label">1. Research Question</span>
+          <h2 id="rq-heading">Research Question &amp; Hypothesis</h2>
+
+          <!-- TODO: [MJ] Replace with your actual research question and hypothesis from the paper. -->
+          <p class="placeholder">
+            State the central research question your analysis addresses. Example structure: "How do [variable(s)] differ between SSP1-2.6 and SSP3-7.0 scenarios across [region/period], and what are the implications for [outcome/policy domain]?"
+          </p>
+          <p class="placeholder">
+            State your hypothesis: what did you expect to find, based on prior literature or physical reasoning? Then describe whether results confirmed, complicated, or challenged that expectation.
+          </p>
+        </section>
+
+        <!-- 2. Background & Literature -->
+        <section class="content-section" aria-labelledby="lit-heading">
+          <span class="section-label">2. Background</span>
+          <h2 id="lit-heading">Literature Review &amp; Background</h2>
+
+          <!-- TODO: [MJ] Write a 2-4 paragraph literature review covering:
+               - What is CMIP6 and why it matters
+               - Key studies on SSP scenarios
+               - Prior work on the specific variables you analyzed
+               - Any regional focus or policy context -->
+          <p class="placeholder">
+            Provide background on CMIP6 (Coupled Model Intercomparison Project Phase 6) and its role in IPCC assessment reports. Explain what SSP (Shared Socioeconomic Pathway) scenarios represent — particularly the contrast between SSP1-2.6 (aggressive mitigation) and SSP3-7.0 (high-emissions, fragmented world).
+          </p>
+          <p class="placeholder">
+            Discuss the prior literature on one or more of your focal variables (temperature, precipitation, soil moisture). What has been documented about projected changes? What uncertainty exists across model ensembles? Which regions or systems are most sensitive?
+          </p>
+          <p class="placeholder">
+            Situate your analysis within the broader context of climate science and, where relevant, the policy implications of diverging trajectories. Cite 3–6 key sources (IPCC reports, peer-reviewed articles, CMIP6 model documentation).
+          </p>
+
+          <div class="info-box">
+            <p><strong>Suggested citations to integrate:</strong> O'Neill et al. (2016) on SSP scenarios; Eyring et al. (2016) on CMIP6; relevant IPCC AR6 Working Group I chapters; any additional sources from your course readings.</p>
+          </div>
+        </section>
+
+        <!-- 3. Data & Methods -->
+        <section class="content-section" aria-labelledby="methods-heading">
+          <span class="section-label">3. Data &amp; Methods</span>
+          <h2 id="methods-heading">Data Sources &amp; Analytical Methods</h2>
+
+          <h3>Data</h3>
+          <!-- TODO: [MJ] Describe your specific datasets: which CMIP6 models, which ensemble members,
+               what time periods, what spatial resolution, where downloaded (e.g., ESGF). -->
+          <p class="placeholder">
+            Describe the CMIP6 datasets you used: model names (e.g., CESM2, MPI-ESM1-2-HR), ensemble members (e.g., r1i1p1f1), time periods, spatial resolution, and the variables extracted (tas for temperature, pr for precipitation, mrso or similar for soil moisture). Note the data source (e.g., Earth System Grid Federation / ESGF).
+          </p>
+
+          <div class="tech-tags" aria-label="Tools and libraries used">
+            <span class="tech-tag">Python 3</span>
+            <span class="tech-tag">xarray</span>
+            <span class="tech-tag">NetCDF4</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Matplotlib</span>
+            <span class="tech-tag">Cartopy</span>
+            <span class="tech-tag">CMIP6</span>
+            <span class="tech-tag">SSP1-2.6</span>
+            <span class="tech-tag">SSP3-7.0</span>
+            <!-- TODO: [MJ] Add/remove tags as needed to reflect actual libraries used -->
+          </div>
+
+          <h3 class="mt-3">Methods</h3>
+          <!-- TODO: [MJ] Describe your analysis workflow step by step:
+               data loading, preprocessing (regridding, masking, unit conversions),
+               ensemble averaging, anomaly calculation, visualization approach. -->
+          <p class="placeholder">
+            Outline your analytical workflow: (1) data loading and inspection using xarray; (2) any preprocessing steps (unit conversion, regridding, time slicing); (3) ensemble averaging or spread calculation; (4) anomaly computation relative to a baseline period; (5) comparison between SSP1-2.6 and SSP3-7.0 outputs; (6) visualization in Matplotlib/Cartopy.
+          </p>
+          <p class="placeholder">
+            Note any analytical decisions you made — choice of baseline period, how you handled missing data, how ensemble uncertainty was characterized. Briefly discuss any limitations of the approach.
+          </p>
+        </section>
+
+        <!-- 4. Analysis & Discussion -->
+        <section class="content-section" aria-labelledby="analysis-heading">
+          <span class="section-label">4. Analysis &amp; Discussion</span>
+          <h2 id="analysis-heading">Analysis &amp; Discussion</h2>
+
+          <!-- TODO: [MJ] Replace placeholder text with your actual findings.
+               Add your figures by placing image files in assets/figures/
+               and updating the <img> tags below. Use data-lightbox for click-to-enlarge. -->
+
+          <h3>Temperature Projections</h3>
+          <p class="placeholder">
+            Describe your findings on projected temperature changes. How do SSP1-2.6 and SSP3-7.0 diverge by mid-century and end-of-century? What is the magnitude of the difference? Are there regional patterns of note? How does ensemble spread compare between scenarios?
+          </p>
+
+          <!-- Figure 1 -->
+          <figure style="margin:1.5rem 0;">
+            <!-- TODO: [MJ] Replace with your actual temperature figure.
+                 Place figure file at: ../assets/figures/fig1-temperature.png
+                 Then replace the .figure-ph div with:
+                 <img src="../assets/figures/fig1-temperature.png"
+                      alt="Map showing projected temperature change under SSP1-2.6 and SSP3-7.0"
+                      data-lightbox="../assets/figures/fig1-temperature.png"
+                      data-lb-caption="Figure 1: [Your caption here]"> -->
+            <div class="figure-ph" aria-label="Figure placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l4-4 4 4 4-5 4 4"/><circle cx="8" cy="15" r="1.5"/></svg>
+              <span>Figure 1: Temperature projection map<br><em>Place file at assets/figures/fig1-temperature.png</em></span>
+            </div>
+            <figcaption class="figure-caption">
+              <!-- TODO: [MJ] Replace with your actual figure caption. -->
+              Figure 1. [Caption: Projected mean surface temperature anomaly (°C) relative to [baseline period], for SSP1-2.6 (left) and SSP3-7.0 (right), averaged across ensemble members. Period: [time range]. Model: [model name(s)].]
+            </figcaption>
+          </figure>
+
+          <h3>Precipitation Projections</h3>
+          <p class="placeholder">
+            Describe your precipitation findings. Where do the two scenarios show the greatest divergence? Are there drying or wetting trends in specific regions? How confident are you in these signals given ensemble spread?
+          </p>
+
+          <!-- Figure 2 -->
+          <figure style="margin:1.5rem 0;">
+            <div class="figure-ph" aria-label="Figure placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l4-4 4 4 4-5 4 4"/><circle cx="8" cy="15" r="1.5"/></svg>
+              <span>Figure 2: Precipitation projection<br><em>Place file at assets/figures/fig2-precipitation.png</em></span>
+            </div>
+            <figcaption class="figure-caption">
+              Figure 2. [Caption: Projected precipitation anomaly (mm/day) ...]
+            </figcaption>
+          </figure>
+
+          <h3>Soil Moisture Projections</h3>
+          <p class="placeholder">
+            Describe your soil moisture findings. How do they relate to the temperature and precipitation signals? What implications do projected changes have for agriculture, drought risk, or ecosystem function?
+          </p>
+
+          <!-- Figure 3 -->
+          <figure style="margin:1.5rem 0;">
+            <div class="figure-ph" aria-label="Figure placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9l4-4 4 4 4-5 4 4"/><circle cx="8" cy="15" r="1.5"/></svg>
+              <span>Figure 3: Soil moisture projection<br><em>Place file at assets/figures/fig3-soilmoisture.png</em></span>
+            </div>
+            <figcaption class="figure-caption">
+              Figure 3. [Caption: Projected soil moisture anomaly ...]
+            </figcaption>
+          </figure>
+
+          <h3>Additional Figures</h3>
+          <!-- TODO: [MJ] Add more figures as needed using the same figure pattern above.
+               Or use a grid layout for multiple smaller figures: -->
+          <div class="figure-grid">
+            <div class="figure-item">
+              <div class="figure-ph">Figure 4<br><em>assets/figures/fig4-[name].png</em></div>
+              <p class="figure-caption">Figure 4. [Caption]</p>
+            </div>
+            <div class="figure-item">
+              <div class="figure-ph">Figure 5<br><em>assets/figures/fig5-[name].png</em></div>
+              <p class="figure-caption">Figure 5. [Caption]</p>
+            </div>
+            <div class="figure-item">
+              <div class="figure-ph">Figure 6<br><em>assets/figures/fig6-[name].png</em></div>
+              <p class="figure-caption">Figure 6. [Caption]</p>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- 5. Conclusions -->
+        <section class="content-section" aria-labelledby="conclusions-heading">
+          <span class="section-label">5. Conclusions</span>
+          <h2 id="conclusions-heading">Conclusions</h2>
+
+          <!-- TODO: [MJ] Summarize your key findings and their significance.
+               Address: what do these results tell us? What are the limitations?
+               What future research would be valuable? -->
+          <p class="placeholder">
+            Summarize the key differences you found between SSP1-2.6 and SSP3-7.0 across the three variables. What is the most important takeaway about the consequences of diverging emissions pathways?
+          </p>
+          <p class="placeholder">
+            Discuss limitations: what aspects of uncertainty couldn't you fully characterize? What model biases or data gaps affected your analysis? How might results differ with additional ensemble members or higher-resolution data?
+          </p>
+          <p class="placeholder">
+            End with a forward-looking statement: what does this analysis imply for climate policy, adaptation planning, or future research directions? Connect the technical findings back to real-world significance.
+          </p>
+
+          <div class="highlight-box">
+            <p><strong>Reflection:</strong> <!-- TODO: [MJ] Add a personal reflection on this project — what you learned, what surprised you, what skills you developed. This helps connect the project to your broader goals as framed in the Introduction. --></p>
+            <p class="placeholder">Describe what this project meant to your development as a geographer and climate analyst. What technical or conceptual skills did you build? How does this project connect to your career goals (e.g., NOAA GFDL, ORNL, graduate school)?</p>
+          </div>
+        </section>
+
+      </div><!-- /.main column -->
+
+      <!-- ── Sidebar ── -->
+      <aside aria-label="Project metadata">
+        <div class="sidebar-card">
+          <h4>Project Details</h4>
+          <ul class="meta-list">
+            <li>
+              <span class="meta-label">Course</span>
+              <span class="meta-value">GEOG 434 — Climate Science</span>
+            </li>
+            <li>
+              <span class="meta-label">Semester</span>
+              <span class="meta-value">Spring 2025</span>
+            </li>
+            <li>
+              <span class="meta-label">Type</span>
+              <span class="meta-value">Core Research Project (Category B)</span>
+            </li>
+            <li>
+              <span class="meta-label">Dataset</span>
+              <span class="meta-value">CMIP6 / ESGF</span>
+            </li>
+            <li>
+              <span class="meta-label">Scenarios</span>
+              <span class="meta-value">SSP1-2.6, SSP3-7.0</span>
+            </li>
+            <li>
+              <span class="meta-label">Variables</span>
+              <span class="meta-value">Temperature (tas), Precipitation (pr), Soil Moisture</span>
+            </li>
+            <li>
+              <span class="meta-label"><!-- TODO: [MJ] update if needed -->Ensemble Members</span>
+              <span class="meta-value">[Number] members</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card" style="margin-top:1.25rem;">
+          <h4>Tools &amp; Libraries</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">xarray</span>
+            <span class="tech-tag">NetCDF4</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Matplotlib</span>
+            <span class="tech-tag">Cartopy</span>
+            <span class="tech-tag">Jupyter</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card" style="margin-top:1.25rem;">
+          <h4>Downloads</h4>
+          <a href="../assets/docs/CMIP6_Analysis_FAST.pdf" target="_blank" class="btn btn-accent" style="width:100%; justify-content:center; margin-bottom:.5rem;">
+            📄 Full Paper (PDF)
+          </a>
+          <!-- TODO: [MJ] If you have code to share (GitHub repo or notebook), add link here:
+          <a href="https://github.com/USERNAME/cmip6-analysis" target="_blank" rel="noopener"
+             class="btn btn-outline" style="width:100%; justify-content:center;">
+            🔗 View Code (GitHub)
+          </a>
+          -->
+        </div>
+
+        <div class="sidebar-card" style="margin-top:1.25rem;">
+          <h4>Related Work</h4>
+          <ul style="list-style:none; padding:0; font-size:.875rem; display:flex; flex-direction:column; gap:.4rem;">
+            <li><a href="cartography.html">← Critical Cartography</a></li>
+            <li><a href="meteorology.html">← Meteorology Skills</a></li>
+            <li><a href="gis.html">← GIS Gallery</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div><!-- /.research-layout -->
+  </div><!-- /.container -->
+
+</main>
+
+<!-- ══════════════════════════════════════════ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <strong>Mario Jinesta</strong> &mdash; Geography &amp; Sustainability, University of Tennessee, Knoxville &mdash; Class of 2027
+    </div>
+    <div class="footer-right">
+      <a href="https://github.com/USERNAME/portfolio" target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

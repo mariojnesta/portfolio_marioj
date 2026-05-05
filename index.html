@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Jinesta — GEOG 499 Portfolio</title>
+  <meta name="description" content="Electronic portfolio of Mario Jinesta, Geography &amp; Sustainability, University of Tennessee Knoxville, Class of 2027.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ NAVIGATION ═══ -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      Mario Jinesta
+      <span>GEOG 499 Portfolio · UTK</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="active">Introduction</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li>
+        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+          Critical Learning <span class="nav-arrow">▾</span>
+        </button>
+        <ul class="dropdown-menu" role="list">
+          <li class="dropdown-divider">Critical Analysis</li>
+          <li><a href="projects/cartography.html">Narrative &amp; Critical Cartography</a></li>
+          <li><a href="projects/meteorology.html">Meteorology Applied Skills</a></li>
+          <li><a href="projects/usability.html">Usability Testing Report</a></li>
+          <li class="dropdown-divider">Core Research</li>
+          <li><a href="projects/cmip6.html"><span class="drop-star">★ </span>CMIP6 Climate Analysis</a></li>
+          <li class="dropdown-divider">GIS &amp; Mapping</li>
+          <li><a href="projects/gis.html">GIS Project Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="additional.html">Additional</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════ HERO ═══ -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-inner container">
+
+    <!-- Photo -->
+    <div class="hero-photo">
+      <!-- TODO: [MJ] Replace with your actual headshot.
+           Rename your photo file to "headshot.jpg" (or .png/.webp)
+           and place it in assets/images/. Then swap the placeholder
+           div below for: <img src="assets/images/headshot.jpg" alt="Mario Jinesta"> -->
+      <div class="hero-photo-ph" role="img" aria-label="Headshot placeholder">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+          <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+        </svg>
+        <span>Add headshot to<br>assets/images/headshot.jpg</span>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div class="hero-content">
+      <h1 class="hero-name">Mario Jinesta</h1>
+      <p class="hero-subtitle">Geography &amp; Sustainability · Public Policy Analysis Minor</p>
+      <p class="hero-institution">University of Tennessee, Knoxville &mdash; Class of 2027</p>
+
+      <div class="hero-bio">
+        <!-- TODO: [MJ] Replace the two placeholder paragraphs below with your personal statement.
+             Keep it to 2 paragraphs max. First: who you are, what you study, what excites you
+             (maps, climate data, the intersection of geography/policy/environment, Spanish fluency,
+             marching band, organizing). Second: forward-looking — where you want to go. -->
+        <p class="placeholder">
+          I'm a Geography &amp; Sustainability student at UTK with a deep interest in making maps, working with climate data, and exploring the place where geographic analysis meets environmental policy. Whether I'm building a custom cartographic style in QGIS or processing multi-model ensemble data with Python, I'm drawn to work that is both technically rigorous and critically engaged. Outside the classroom, you'll find me marching in the Pride of the Southland Band, organizing on campus, or having a conversation en español.
+        </p>
+        <p class="placeholder">
+          I'm working toward a career as a climate data analyst or meteorological technician — ideally at an institution like NOAA GFDL, ORNL, or the National Weather Service, where computational analysis and place-based thinking intersect. This portfolio traces the arc of that preparation: from critical cartography seminars to hands-on CMIP6 modeling, from radar interpretation to creative GIS work that I genuinely love. I'll be graduating in May 2027 and am open to research opportunities, internships, and graduate school paths that push this work forward.
+        </p>
+      </div>
+
+      <div class="hero-tags" aria-label="Areas of focus">
+        <span class="tag">Climate Data Analysis</span>
+        <span class="tag">GIS &amp; Cartography</span>
+        <span class="tag">Python / xarray</span>
+        <span class="tag">Meteorology</span>
+        <span class="tag">Public Policy</span>
+        <span class="tag">Spanish (Fluent)</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════ THREE SUBSECTIONS (CARDS) ═══ -->
+<section class="section section--alt" aria-labelledby="subsections-heading">
+  <div class="container">
+    <h2 id="subsections-heading" class="visually-hidden">About</h2>
+    <div class="grid-3">
+
+      <!-- Card 1: Experiences at UTK -->
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">🎓</div>
+        <h3>Experiences at UTK</h3>
+        <!-- TODO: [MJ] One paragraph going a layer deeper on your coursework:
+             Maps Society & Power, Meteorology, Climate Science, GIS.
+             Emphasize the through-line of being both technical and critical. -->
+        <p class="placeholder">
+          My time at UTK has spanned both the technical and the interpretive sides of geography. Courses like Maps, Society &amp; Power gave me a framework for understanding how cartographic choices are never neutral — who draws the map, what gets named, and what gets left out are all political decisions. Meanwhile, coursework in Meteorology, Climate Science, and GIS has built my quantitative toolkit. The combination — critical spatial thinking backed by real analytical skill — is the through-line of my undergraduate education.
+        </p>
+      </article>
+
+      <!-- Card 2: Specialty Area & Preparation -->
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">🗺️</div>
+        <h3>Specialty Area &amp; Preparation</h3>
+        <!-- TODO: [MJ] One paragraph on applied climate data analysis and cartographic design.
+             Mention Python/xarray/CMIP6, ArcGIS/QGIS, the Zelda/Smokies map,
+             meteorology skills, policy minor. -->
+        <p class="placeholder">
+          My specialty sits at the intersection of applied climate data analysis and cartographic design. I've worked with CMIP6 multi-model ensembles in Python using xarray and NetCDF workflows, comparing emissions scenarios and analyzing temperature, precipitation, and soil moisture projections. On the cartography side, I work fluidly in both ArcGIS Pro and QGIS — including a project reimagining the Great Smoky Mountains as a Zelda-inspired map that required deep familiarity with contour styling and custom symbology. My Public Policy Analysis minor adds the policy and governance layer that makes this work matter beyond the technical.
+        </p>
+      </article>
+
+      <!-- Card 3: Future Goals -->
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">🔭</div>
+        <h3>Future Goals</h3>
+        <!-- TODO: [MJ] One paragraph on your career direction:
+             Climate data analyst, meteorological technician, NOAA GFDL,
+             ORNL, NWS, possible grad school. Show how the portfolio builds toward it. -->
+        <p class="placeholder">
+          After graduation in May 2027, I'm aiming for a role as a climate data analyst or meteorological technician — ideally in a research or applied government setting like NOAA's Geophysical Fluid Dynamics Laboratory, Oak Ridge National Laboratory, or a regional National Weather Service office. I'm also seriously weighing graduate programs in climate science, environmental data science, or physical geography. Every piece of work in this portfolio — the critical analysis, the GIS projects, the CMIP6 modeling — is a deliberate step toward that goal. I want to do work that is technically defensible and policy-relevant.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ PORTFOLIO OVERVIEW ═══ -->
+<section class="section" aria-labelledby="portfolio-nav-heading">
+  <div class="container">
+    <span class="section-label">Portfolio Contents</span>
+    <h2 id="portfolio-nav-heading">Navigate the Portfolio</h2>
+    <p class="text-muted mb-3">Each section maps directly to a rubric requirement for GEOG 499.</p>
+
+    <div class="grid-2">
+      <div>
+        <h3 style="color:var(--col-primary); margin-bottom:.75rem;">I. Introduction <small style="font-size:.75rem; font-weight:400; color:var(--col-text-muted);">— This page</small></h3>
+        <p>Personal statement, specialty area, and future goals. You're reading it now.</p>
+
+        <h3 style="color:var(--col-primary); margin-bottom:.75rem; margin-top:1.75rem;">II. <a href="resume.html">Resume</a></h3>
+        <p>Formatted HTML resume with downloadable PDF. Includes education, experience, skills, and relevant coursework.</p>
+
+        <h3 style="color:var(--col-primary); margin-bottom:.75rem; margin-top:1.75rem;">IV. <a href="additional.html">Additional Items</a></h3>
+        <p>Public Policy Analysis minor, Spanish fluency, and supplementary projects (sports analytics / data visualization).</p>
+      </div>
+
+      <div>
+        <h3 style="color:var(--col-primary); margin-bottom:.75rem;">III. Critical Learning Elements</h3>
+        <ul style="font-size:.93rem; list-style:none; padding:0; display:flex; flex-direction:column; gap:.5rem;">
+          <li><strong>Critical Analysis:</strong>
+            <ul style="padding-left:1.25rem; margin-top:.3rem;">
+              <li><a href="projects/cartography.html">Narrative &amp; Critical Cartography (GEOG 421)</a></li>
+              <li><a href="projects/meteorology.html">Meteorology Applied Skills (GEOG 334)</a></li>
+              <li><a href="projects/usability.html">Usability Testing Report (ENGL 360)</a></li>
+            </ul>
+          </li>
+          <li style="margin-top:.5rem;"><strong>Core Research:</strong>
+            <ul style="padding-left:1.25rem; margin-top:.3rem;">
+              <li><a href="projects/cmip6.html">★ CMIP6 Climate Model Ensemble Analysis (GEOG 434)</a></li>
+            </ul>
+          </li>
+          <li style="margin-top:.5rem;"><strong>GIS &amp; Mapping:</strong>
+            <ul style="padding-left:1.25rem; margin-top:.3rem;">
+              <li><a href="projects/gis.html">GIS Project Gallery (QGIS / ArcGIS Pro)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <a href="resume.html" class="btn btn-primary">View Resume</a>
+      <a href="projects/cmip6.html" class="btn btn-outline">★ CMIP6 Research Project</a>
+      <a href="projects/gis.html" class="btn btn-outline">GIS Gallery</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <strong>Mario Jinesta</strong> &mdash; Geography &amp; Sustainability, University of Tennessee, Knoxville &mdash; Class of 2027
+    </div>
+    <div class="footer-right">
+      <!-- TODO: [MJ] Replace USERNAME with your GitHub username -->
+      <a href="https://github.com/USERNAME/portfolio" target="_blank" rel="noopener">GitHub Repository</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
